@@ -7,6 +7,8 @@ import "./index.scss";
 //store
 const store = new Store();
 
+declare var module: { hot: any };
+
 //webpack (HMR)
 if (module.hot) {
    // accept itself
