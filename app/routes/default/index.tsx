@@ -1,4 +1,4 @@
-import { HtmlElement, Link } from 'cx-core/widgets';
+import { HtmlElement, Link, Button } from 'cx-core/widgets';
 
 console.log(HtmlElement);
 

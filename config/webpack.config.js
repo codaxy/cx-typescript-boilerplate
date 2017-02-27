@@ -39,7 +39,7 @@ module.exports = {
         }]
     },
     entry: {
-        vendor: ['cx-react', paths.app('polyfill.js')],
+        vendor: ['cx-react', paths.app('polyfill')],
         app: [
            paths.app('index')
         ]

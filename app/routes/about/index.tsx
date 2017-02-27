@@ -5,7 +5,7 @@ console.log(HtmlElement, bind);
 
 export default <cx>
     <div ws>
-        Routing seems to be working. 123
+        Routing seems to be working.
         <Link href="~/">Back</Link>
     </div>
 </cx>

@@ -1,5 +1,7 @@
-import { HtmlElement } from 'cx/widgets';
-import { ContentPlaceholder } from 'cx/ui';
+import { HtmlElement } from 'cx-core/widgets';
+import { ContentPlaceholder } from 'cx-core/ui';
+
+console.log(HtmlElement);
 
 export default <cx>
    <div class="app">
