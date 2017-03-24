@@ -1,11 +1,14 @@
-import { HtmlElement, Link, TextField } from 'cx/widgets';
+import { HtmlElement, Link, TextField, Text } from 'cx/widgets';
 import { bind } from 'cx/ui';
 
-console.log(HtmlElement, bind);
+console.log(HtmlElement);
 
 export default <cx>
     <div ws>
-        Routing seems to be working.
+        What's your name?
+        <TextField value={bind("name")} />
+        <Text tpl="Hello {name}!" />
+        <p>Routing seems to be working.</p>
         <Link href="~/">Back</Link>
     </div>
 </cx>
