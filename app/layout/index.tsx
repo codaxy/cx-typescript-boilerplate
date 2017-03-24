@@ -1,7 +1,6 @@
+import * as JSCX from '../jsx/converter';
 import { HtmlElement } from 'cx/widgets';
 import { ContentPlaceholder } from 'cx/ui';
-
-console.log(HtmlElement);
 
 export default <cx>
    <div class="app">

@@ -5,15 +5,17 @@ import AppLayout from '../layout';
 import Default from './default';
 import About from './about';
 
+import * as JSCX from '../jsx/converter';
+
 
 export default <cx>
-    <PureContainer outerLayout={AppLayout}>
+    <div outerLayout={AppLayout}>   
         <Route route="~/" url={{ bind: "url" }}>
-            <Default/>
+            { Default }
         </Route>
         <Route route="~/about" url={{ bind: "url" }}>
-            <About/>
+            { About }
         </Route>
-    </PureContainer>
+    </div>
 </cx>
 

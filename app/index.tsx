@@ -40,4 +40,6 @@ Debug.enable('app-data');
 //app loop
 import Routes from './routes';
 
+console.log(Routes);
+
 let stop = startAppLoop(document.getElementById('app'), store, Routes);

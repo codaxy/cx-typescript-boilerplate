@@ -27,14 +27,8 @@ module.exports = {
             query: babelCfg
         }, {
             test: /\.tsx?$/,
-            loaders: [
-                {
-                    loader: 'babel-loader',
-                    query: babelCfg
-                },
-                'ts-loader'
-            ],
-            include: /(app|cx-core)/
+            loaders: 'ts-loader',
+            include: /(app)/
         }]
     },
     entry: {
