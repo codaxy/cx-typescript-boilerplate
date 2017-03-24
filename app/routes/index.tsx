@@ -1,4 +1,4 @@
-import { Route, PureContainer } from 'cx-core/widgets';
+import { Route, PureContainer } from 'cx/widgets';
 
 import AppLayout from '../layout';
 

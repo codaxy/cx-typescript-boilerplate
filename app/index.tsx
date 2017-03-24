@@ -1,6 +1,6 @@
-import { Store } from 'cx-core/data';
-import { Url, History, Widget, startAppLoop } from 'cx-core/ui';
-import { Timing, Debug } from 'cx-core/util';
+import { Store } from 'cx/data';
+import { Url, History, Widget, startAppLoop } from 'cx/ui';
+import { Timing, Debug } from 'cx/util';
 //css
 import "./index.scss";
 

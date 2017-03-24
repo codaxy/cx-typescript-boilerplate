@@ -1,5 +1,5 @@
-import { HtmlElement } from 'cx-core/widgets';
-import { ContentPlaceholder } from 'cx-core/ui';
+import { HtmlElement } from 'cx/widgets';
+import { ContentPlaceholder } from 'cx/ui';
 
 console.log(HtmlElement);
 

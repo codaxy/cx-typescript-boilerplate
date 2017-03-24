@@ -1,5 +1,5 @@
-import { HtmlElement, Link, TextField } from 'cx-core/widgets';
-import { bind } from 'cx-core/ui';
+import { HtmlElement, Link, TextField } from 'cx/widgets';
+import { bind } from 'cx/ui';
 
 console.log(HtmlElement, bind);
 
