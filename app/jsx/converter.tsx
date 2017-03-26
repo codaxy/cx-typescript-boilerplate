@@ -2,7 +2,7 @@ import {HtmlElement} from 'cx/widgets';
 
 export function createElement(typeName: any, props: any, ...children) {
 
-    console.log(children);
+    //console.log(children);
 
     if (Array.isArray(typeName))
         return typeName;

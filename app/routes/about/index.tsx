@@ -1,6 +1,6 @@
 import { HtmlElement, Link, TextField, Text, Button } from 'cx/widgets';
 import { bind } from 'cx/ui';
-import * as JSCX from '../../jsx/converter';
+import { createElement } from '../../jsx/converter';
 
 export default <cx>
     <div ws>

@@ -18,7 +18,7 @@ var specific = {
     output: {
         publicPath: '/'
     },
-    devtool: 'eval',
+    devtool: 'source-map',
     devServer: {
         hot: true,
         port: 8088,

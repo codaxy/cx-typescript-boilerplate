@@ -1,4 +1,4 @@
-import * as JSCX from '../jsx/converter';
+import { createElement } from '../jsx/converter';
 import { HtmlElement } from 'cx/widgets';
 import { ContentPlaceholder } from 'cx/ui';
 

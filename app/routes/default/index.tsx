@@ -1,6 +1,6 @@
 import { HtmlElement, Link, Button } from 'cx/widgets';
 
-import * as JSCX from '../../jsx/converter';
+import { createElement } from '../../jsx/converter';
 
 export default <cx>
     <h3>Success</h3>

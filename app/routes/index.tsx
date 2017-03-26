@@ -5,7 +5,7 @@ import AppLayout from '../layout';
 import Default from './default';
 import About from './about';
 
-import * as JSCX from '../jsx/converter';
+import { createElement } from '../jsx/converter';
 
 
 export default <cx>
