@@ -16,6 +16,7 @@
     "babel-polyfill": "^6.23.0",
     "cx": "^17.4.0",
     "cx-react": "^17.4.0",
+    "cx-theme-material": "^17.4.1",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
