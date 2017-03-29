@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^7.0.5",
     "babel-polyfill": "^6.23.0",
     "cx": "^17.4.0",
     "cx-react": "^17.4.0",
@@ -20,6 +19,7 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "@types/node": "^7.0.5",
     "@types/react": "^15.0.20",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",

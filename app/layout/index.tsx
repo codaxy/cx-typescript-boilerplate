@@ -1,5 +1,9 @@
 import {cx, ContentPlaceholder, Link} from 'cx/widgets';
 
+import {getCategories} from '../examples';
+
+console.log(getCategories());
+
 export default <cx>
     <div class="app">
         <header class="header">
@@ -7,25 +11,27 @@ export default <cx>
         </header>
         <aside class="aside">
             <h1>Cx - TypeScript</h1>
-
-            <dl>
-                <dt>
-                    General
-                </dt>
-                <dd>
-                    <Link href="~/Example1" url={{bind: "url"}}>
-                        About
-                    </Link>
-                </dd>
-                <dd>
-                    <Link href="~/Example2" url={{bind: "url"}}>
-                        About
-                    </Link>
-                </dd>
-            </dl>
-            <h4>
-                Forms
-            </h4>
+            {
+                getCategories().map(cat => (<cx>
+                    <dl>
+                        <dt>
+                            {cat.name}
+                        </dt>
+                        {
+                            cat.examples.map(ex => <cx>
+                                <dd>
+                                    <Link
+                                        href={ex.path}
+                                        url={{bind: "url"}}
+                                    >
+                                        {ex.name} Test
+                                    </Link>
+                                </dd>
+                            </cx>)
+                        }
+                    </dl>
+                </cx>))
+            }
         </aside>
         <ContentPlaceholder />
     </div>

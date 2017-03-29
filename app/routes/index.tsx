@@ -4,6 +4,9 @@ import AppLayout from '../layout';
 
 import Default from './default';
 import About from './about';
+import Examples from '../examples';
+
+console.log(Examples);
 
 export default <cx>
     <div outerLayout={AppLayout}>   
@@ -13,6 +16,7 @@ export default <cx>
         <Route route="~/about" url={{ bind: "url" }}>
             { About }
         </Route>
+        {Examples}
     </div>
 </cx>
 
