@@ -11,6 +11,13 @@ import {
 } from "cx/widgets";
 import {LabelsLeftLayout} from "cx/ui";
 
+{/*onSubmit={(e, { store }) => {
+    e.preventDefault();
+    //we don't want browser to submit the form
+    MsgBox.alert(`Welcome ${store.get("login.username")}!`);
+    store.set("login", null);
+}}*/}
+
 
 register('Login Form', 'Forms', <cx>
     <div class="example pad">
@@ -24,12 +31,6 @@ register('Login Form', 'Forms', <cx>
         >
             <form
                 class="login-form"
-                onSubmit={(e, { store }) => {
-          e.preventDefault();
-          //we don't want browser to submit the form
-          MsgBox.alert(`Welcome ${store.get("login.username")}!`);
-          store.set("login", null);
-        }}
             >
                 <ValidationGroup layout={LabelsLeftLayout} invalid={{bind:"login.invalid"}}>
                     <TextField
@@ -49,6 +50,12 @@ register('Login Form', 'Forms', <cx>
                         mod="primary"
                         disabled={{ bind: "login.invalid" }}
                         submit
+                        onClick={(e, { store }) => {
+                            e.preventDefault();
+                            //we don't want browser to submit the form
+                            MsgBox.alert(`Welcome ${store.get("login.username")}!`);
+                            store.set("login", null);
+                        }}
                     >
                         Login
                     </Button>

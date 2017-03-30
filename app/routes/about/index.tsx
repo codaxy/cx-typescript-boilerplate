@@ -3,13 +3,9 @@ import { bind } from 'cx/ui';
 
 export default <cx>
     <div ws>
-        What's your name?
-        <TextField value={bind("name")} />
-        <Text tpl="Hello {name}!"   />
-        <p>Routing seems to be working.</p>
-        <Link href="~/">Back</Link>
-        <Button text="123" /> 
-        <Section title="Hello">123123</Section>
-        <Section title=""/>
+        <h2 putInto="header">
+           About 
+        </h2>
+        <p>The purpose of this project is to illustrate how to use CxJS in TypeScript projects.</p>
     </div>    
 </cx>

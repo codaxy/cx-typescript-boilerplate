@@ -2,11 +2,18 @@ let categoryExample = {};
 
 export function register(name, category, content) {
     let cat = categoryExample[category] || (categoryExample[category] = []);
-    cat.push({
+    let example = {
         name,
         content,
         path: `~/${category.toLowerCase()}/${name.toLowerCase().replace(/\s/, '-')}`
-    });
+    }
+
+    //Hot Module Reload - replace example
+    let index = cat.findIndex(a=>a.name == name);
+    if (index != -1)
+        cat[index] = example;
+    else
+        cat.push(example);
 }
 
 export function getCategories() {

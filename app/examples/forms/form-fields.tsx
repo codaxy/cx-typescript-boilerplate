@@ -34,8 +34,7 @@ register('Form Fields', 'Forms', <cx>
                 <TextArea label="TextArea" value={{ bind: "text2" }} rows={3}/>
             </Section>
 
-            <Section mod="well" header={{ level: 4, text: "Numeric"}} layout={{type: LabelsTopLayout, vertical: true}}
-                     headingLevel={4}>
+            <Section mod="well" header={{ level: 4, text: "Numeric"}} layout={{type: LabelsTopLayout, vertical: true}}>
                 <NumberField label="NumberField" value={{ bind: "number" }}/>
                 <Slider label="Slider" value={{ bind: "number" }}/>
             </Section>
@@ -81,7 +80,7 @@ register('Form Fields', 'Forms', <cx>
         </FlexRow>
 
 
-        <h3 style="margin-top: 3rem">Standalone</h3>
+        <h3 style={{marginTop: "3rem"}}>Standalone</h3>
 
         <FlexRow wrap spacing="large">
 

@@ -1,5 +1,6 @@
 var webpack = require('webpack'),
     ExtractTextPlugin = require("extract-text-webpack-plugin"),
+    BabiliPlugin = require("babili-webpack-plugin"),
     merge = require('webpack-merge'),
     common = require('./webpack.config');
 
@@ -20,10 +21,11 @@ var specific = {
     },
 
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         }),
+        new BabiliPlugin(),
+        //new webpack.optimize.UglifyJsPlugin(),
         sass
     ],
 
