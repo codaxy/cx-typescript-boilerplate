@@ -1,14 +1,7 @@
-import { HtmlElement, Link, Button } from 'cx/widgets';
-
-console.log(HtmlElement);
+import { cx, RedirectRoute } from 'cx/widgets';
 
 export default <cx>
-    <h3>Success</h3>
-    <p>Your app is now running.</p>
-    <p>Checklist:</p>
-    <ul>
-        <li><Link href="~/about">Routing</Link></li>
-        <li class="green-item">CSS</li>
-        <li>HMR</li>
-    </ul>
+    <div>
+        <RedirectRoute url={{bind: "url"}} path="~/" redirect="~/forms/login-form" />>
+    </div>
 </cx>

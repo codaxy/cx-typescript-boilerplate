@@ -4,6 +4,8 @@ import { Timing, Debug } from 'cx/util';
 //css
 import "./index.scss";
 
+import "cx-theme-material";
+
 //store
 const store = new Store();
 
@@ -39,5 +41,7 @@ Debug.enable('app-data');
 
 //app loop
 import Routes from './routes';
+
+console.log(Routes);
 
 let stop = startAppLoop(document.getElementById('app'), store, Routes);

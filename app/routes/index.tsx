@@ -1,19 +1,22 @@
-import { Route, PureContainer } from 'cx/widgets';
+import {cx, Route, Sandbox} from 'cx/widgets';
 
 import AppLayout from '../layout';
 
 import Default from './default';
 import About from './about';
-
+import Examples from '../examples';
 
 export default <cx>
-    <PureContainer outerLayout={AppLayout}>
-        <Route route="~/" url={{ bind: "url" }}>
-            <Default/>
-        </Route>
-        <Route route="~/about" url={{ bind: "url" }}>
-            <About/>
-        </Route>
-    </PureContainer>
+    <div outerLayout={AppLayout}>
+        <Sandbox key={{ bind: "url" }} storage={{ bind: "pages" }}>
+            <Route route="~/" url={{ bind: "url" }}>
+                { Default }
+            </Route>
+            <Route route="~/about" url={{ bind: "url" }}>
+                { About }
+            </Route>
+            {Examples}
+        </Sandbox>
+    </div>
 </cx>
 

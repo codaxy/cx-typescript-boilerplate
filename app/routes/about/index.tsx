@@ -1,14 +1,11 @@
-import { HtmlElement, Link, TextField, Text } from 'cx/widgets';
+import { cx, Link, TextField, Text, Button, Repeater, Section } from 'cx/widgets';
 import { bind } from 'cx/ui';
-
-console.log(HtmlElement);
 
 export default <cx>
     <div ws>
-        What's your name?
-        <TextField value={bind("name")} />
-        <Text tpl="Hello {name}!" />
-        <p>Routing seems to be working.</p>
-        <Link href="~/">Back</Link>
-    </div>
+        <h2 putInto="header">
+           About 
+        </h2>
+        <p>The purpose of this project is to illustrate how to use CxJS in TypeScript projects.</p>
+    </div>    
 </cx>

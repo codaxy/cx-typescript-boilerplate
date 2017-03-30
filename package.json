@@ -12,13 +12,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^7.0.5",
     "babel-polyfill": "^6.23.0",
-    "cx": "^17.4.0",
+    "babili-webpack-plugin": "^0.0.11",
+    "casual": "^1.5.11",
+    "cx": "ts",
     "cx-react": "^17.4.0",
+    "cx-theme-material": "^17.4.1",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "@types/node": "^7.0.5",
+    "@types/react": "^15.0.20",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-syntax-jsx": "^6.8.0",
