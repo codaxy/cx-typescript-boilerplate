@@ -1,0 +1,18 @@
+.example {
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+
+  &.pad {
+    padding: 2rem;
+  }
+
+  &.flex {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+}

@@ -2,13 +2,8 @@ import {cx, ContentPlaceholder, Link} from 'cx/widgets';
 
 import {getCategories} from '../examples';
 
-console.log(getCategories());
-
 export default <cx>
     <div class="app">
-        <header class="header">
-
-        </header>
         <aside class="aside">
             <h1>Cx - TypeScript</h1>
             {
@@ -24,7 +19,7 @@ export default <cx>
                                         href={ex.path}
                                         url={{bind: "url"}}
                                     >
-                                        {ex.name} Test
+                                        {ex.name}
                                     </Link>
                                 </dd>
                             </cx>)
@@ -33,6 +28,11 @@ export default <cx>
                 </cx>))
             }
         </aside>
-        <ContentPlaceholder />
+        <main class="main">
+            <ContentPlaceholder />
+        </main>
+        <header class="header">
+            <ContentPlaceholder name="header"/>
+        </header>
     </div>
 </cx>;
