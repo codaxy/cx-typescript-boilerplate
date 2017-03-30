@@ -1518,9 +1518,9 @@ cx-theme-material@^17.4.1:
   version "17.4.1"
   resolved "https://registry.yarnpkg.com/cx-theme-material/-/cx-theme-material-17.4.1.tgz#fa4098b501d22df90b73d3b32bef9fe07ec57f59"
 
-cx@^17.4.0:
-  version "17.4.0"
-  resolved "https://registry.yarnpkg.com/cx/-/cx-17.4.0.tgz#8743c8cfaffa65f28105ec2f30f62b3f7879d0af"
+cx@ts:
+  version "17.4.3"
+  resolved "https://registry.yarnpkg.com/cx/-/cx-17.4.3.tgz#fd38d8aad9584fe1c0ad04f8ac870ff1f75192f7"
   dependencies:
     intl-io "^0.2.3"
     route-parser "^0.0.5"
@@ -3878,7 +3878,7 @@ sort-keys@^1.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
-source-list-map@^0.1.7, source-list-map@~0.1.0, source-list-map@~0.1.7:
+source-list-map@^0.1.7, source-list-map@~0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-0.1.7.tgz#d4b5ce2a46535c72c7e8527c71a77d250618172e"
 
@@ -4320,14 +4320,7 @@ webpack-merge@^4.1.0:
   dependencies:
     lodash "^4.17.4"
 
-webpack-sources@^0.1.0:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-0.1.3.tgz#15ce2fb79d0a1da727444ba7c757bf164294f310"
-  dependencies:
-    source-list-map "~0.1.0"
-    source-map "~0.5.3"
-
-webpack-sources@^0.1.4:
+webpack-sources@^0.1.0, webpack-sources@^0.1.4:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-0.1.5.tgz#aa1f3abf0f0d74db7111c40e500b84f966640750"
   dependencies:
