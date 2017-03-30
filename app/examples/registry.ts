@@ -5,7 +5,7 @@ export function register(name, category, content) {
     let example = {
         name,
         content,
-        path: `~/${category.toLowerCase()}/${name.toLowerCase().replace(/\s/, '-')}`
+        path: `~/${category.toLowerCase()}/${name.toLowerCase().replace(/\s/g, '-')}`
     }
 
     //Hot Module Reload - replace example
