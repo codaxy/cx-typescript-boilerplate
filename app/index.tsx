@@ -4,12 +4,15 @@ import { Timing, Debug } from 'cx/util';
 //css
 import "./index.scss";
 
-import "cx-theme-material";
+import {enableMaterialLabelPlacement, enableMaterialHelpPlacement} from "cx-theme-material";
+
+enableMaterialHelpPlacement();
+enableMaterialLabelPlacement();
 
 //store
 const store = new Store();
 
-declare var module: { hot: any };
+declare let module: { hot: any };
 
 //webpack (HMR)
 if (module.hot) {
