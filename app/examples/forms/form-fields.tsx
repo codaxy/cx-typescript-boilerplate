@@ -18,7 +18,8 @@ import {
     Slider,
     Switch,
     Section,
-    FlexRow
+    FlexRow,
+    FlexCol
 } from "cx/widgets";
 
 import {LabelsLeftLayout, LabelsTopLayout} from "cx/ui";

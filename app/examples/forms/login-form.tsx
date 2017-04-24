@@ -36,12 +36,14 @@ register('Login Form', 'Forms', <cx>
                         value={{bind:"login.username"}}
                         label="Username"
                         required={true}
+                        trackBrowserAutofill
                     />
                     <TextField
                         value={{bind:"login.password"}}
                         label="Password"
                         inputType="password"
                         required={true}
+                        trackBrowserAutofill
                     />
                     <Checkbox value={{bind:"login.rememberMe"}}>Remember me</Checkbox>
                     <Button

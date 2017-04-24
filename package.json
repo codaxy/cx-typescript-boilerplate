@@ -15,9 +15,9 @@
     "babel-polyfill": "^6.23.0",
     "babili-webpack-plugin": "^0.0.11",
     "casual": "^1.5.12",
-    "cx": "^17.4.11",
+    "cx": "^17.5.2",
     "cx-react": "^17.4.1",
-    "cx-theme-material": "^17.4.3",
+    "cx-theme-material": "^17.4.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "whatwg-fetch": "^2.0.3"
@@ -26,7 +26,7 @@
     "@types/node": "^7.0.13",
     "@types/react": "^15.0.22",
     "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
+    "babel-loader": "^7.0.0",
     "babel-plugin-syntax-jsx": "^6.8.0",
     "babel-preset-cx-env": "^17.4.3",
     "css-loader": "^0.28.0",
@@ -40,7 +40,7 @@
     "ts-loader": "^2.0.3",
     "typescript": "^2.2.2",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.2",
+    "webpack-dev-server": "^2.4.4",
     "webpack-merge": "^4.1.0"
   }
 }
