@@ -8,7 +8,7 @@ import Examples from '../examples';
 
 export default <cx>
     <div outerLayout={AppLayout}>
-        <Sandbox key={{ bind: "url" }} storage={{ bind: "pages" }}>
+        <Sandbox accessKey={{ bind: "url" }} storage={{ bind: "pages" }}>
             <Route route="~/" url={{ bind: "url" }}>
                 { Default }
             </Route>
