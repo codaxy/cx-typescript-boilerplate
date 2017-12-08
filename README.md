@@ -50,8 +50,8 @@ The problem is that React type definitions are not aware of the second argument 
 
 To overcome this issue use the following:
 ```
-<form onSubmit={(e) => { let instance = arguments[1]; }}>
-<form onSubmit={(e) => { let { controller } = arguments[1]; controller.onSubmit(e); }}>
+<form onSubmit={(...args) => { let [e, instance] = args; }}>
+<form onSubmit={(...args) => { let [e, { controller }] = args; controller.onSubmit(e); }}>
 ```
 
 #### String based styles on plain HTML elements

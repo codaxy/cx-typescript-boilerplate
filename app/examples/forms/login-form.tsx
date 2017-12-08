@@ -24,8 +24,8 @@ register('Login Form', 'Forms', <cx>
         >
             <form
                 class="login-form"
-                onSubmit={(e) => {
-                    let { store } = arguments[1];
+                onSubmit={(...args) => {
+                    let [e, {store}] = args;
                     e.preventDefault(); //we don't want browser to submit the form
                     MsgBox.alert(`Welcome ${store.get("login.username")}!`);
                     store.set("login", null);
